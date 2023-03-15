@@ -1,0 +1,118 @@
+body {
+    margin: 0%;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    height: 100vh;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('mountain.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 20vh;
+}
+
+
+
+.container > .right-side {
+    display: grid;
+    grid-template-rows: 1.5fr 1.1fr 1.5fr;
+}
+
+.top , .end {
+    background-color: #f4f2f2e4;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.top, .main, .end {
+    padding-left: 40px;
+}
+
+.button {
+    background-color: #596D48;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 2px 2px 7px black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0px 4px black;
+    border-style: none;
+}
+
+.end {
+    padding-top: 20px;
+}
+
+.form {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    gap: 80px;
+   
+    
+}
+
+.first-row, .second-row {
+    display: grid;
+    width: 200px;
+    font-size: 13px;
+    border-radius: 20px;
+
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding-bottom: 20px;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, .30);
+}    
+
+input {
+    border-radius: 5px;
+    height: 20px;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input:invalid {
+    border-color: red;
+}
